@@ -1,8 +1,6 @@
 package scientific_calculator;
 
-import javax.sound.midi.Soundbank;
-import java.io.InputStream;
-import java.sql.SQLOutput;
+
 import java.util.*;
 
 public class MyCalculator {
@@ -32,12 +30,17 @@ public class MyCalculator {
             System.out.println("Please enter the exponent");
             num2 = scanObject.nextDouble();
         }
+        else if (operator == '3'){
+            System.out.println("Please enter the number to be cubed");
+            num1 = scanObject.nextDouble();
+        }
         else {
             System.out.println("Please enter first number: ");
             num1 = scanObject.nextDouble();
             System.out.println("Please enter second number: ");
             num2 = scanObject.nextDouble();
         }
+
 
         switch (operator) {
             case '+':
@@ -72,6 +75,10 @@ public class MyCalculator {
                 answer = (Math.pow(num1, num2));
                 System.out.println(num1 + " " + "to the power of" + " " + num2 + " = " + answer);
                 break;
+            case '3':
+               answer = (Math.pow(num1, 3));
+               System.out.println(num1 + " cubed " + " = " + answer);
+               break;
         }
     }
 }
