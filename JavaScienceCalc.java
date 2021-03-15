@@ -3,18 +3,17 @@ package scientific_calculator;
 import java.awt.*;
 import javax.swing.*;
 import java.awt.event.*;
-import javax.swing.event.*;
 
 public class JavaScienceCalc extends JFrame implements ActionListener {
     JTextField tfield;
     double temp, temp1, result, a;
-    static double m1, m2;
+    static double m1;
     int k = 1, x = 0, y = 0, z = 0;
     char ch;
-    JButton b1, b2, b3, b4, b5, b6, b7, b8, b9, zero, clr, pow2, pow3, exp, fac, plus, minus, div, log, rec, mul, eq, addSub, dot, mr, mc, mp, mm, sqrt, sin, cos, tan;
+    JButton b1, b2, b3, b4, b5, b6, b7, b8, b9, zero, clr, pow2, pow3, exp, fac, plus, minus, div, log, rec, mul, eq, dot, mr, mc, mp, mm, sqrt, sin, cos, tan;
 
     Container cont;
-    JPanel textPanel, buttonpanel;
+    JPanel buttonpanel;
 
     JavaScienceCalc() {
         cont = getContentPane();
